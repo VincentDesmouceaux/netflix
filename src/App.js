@@ -3,20 +3,20 @@ import data from "./users.json";
 import netflixLogo from "./img/netflix.png";
 function App() {
   return (
-    <ul>
+    <ul className="App">
+      <header>
+        <img alt="netflix" src={netflixLogo} />
+      </header>
       {data.map((element, index) => {
-        console.log(element);
         return (
-          <div>
-            <p>{element.category}</p>
-
-            {element.images.map((element) => {
-              return(
-              <>
-                <div>{element.images}</div>;
-              </>;
-            })}
-          </div>
+          <>
+            <p className="h1">{element.category}</p>
+            <div className="carousel">
+              {element.images.map((image) => {
+                return <img src={image} alt=""></img>;
+              })}
+            </div>
+          </>
         );
       })}
     </ul>
