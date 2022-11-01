@@ -2,11 +2,10 @@ import "./App.css";
 import data from "./users.json";
 import netflixLogo from "./img/netflix.png";
 function App() {
-  const movies = [{ category, images }];
   return (
     <ul>
       {data.map((element, index) => {
-        return <> {element.movies}</>;
+        return <> {element.category}</>;
       })}
     </ul>
   );
