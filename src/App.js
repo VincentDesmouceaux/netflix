@@ -9,8 +9,13 @@ function App() {
         return (
           <div>
             <p>{element.category}</p>
-            const images = [{images.array}] data.map((element)) => {}
-            {element}
+
+            {element.images.map((element) => {
+              return(
+              <>
+                <div>{element.images}</div>;
+              </>;
+            })}
           </div>
         );
       })}
