@@ -1,10 +1,11 @@
 import "./App.css";
-import users from "./users.json";
+
 import netflixLogo from "./img/netflix.png";
 function App() {
   return (
-    <div>
+    <div className="App">
       <img alt="netflixLogo" src={netflixLogo} />
+      <Container />
     </div>
   );
 }
