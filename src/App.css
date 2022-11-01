@@ -1,5 +1,8 @@
 .App {
   background: black;
+
+  padding-left: 50px;
+  padding-right: 50px;
 }
 header img {
   height: 200px;
