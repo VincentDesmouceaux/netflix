@@ -5,7 +5,14 @@ function App() {
   return (
     <ul>
       {data.map((element, index) => {
-        return <> {element.category}</>;
+        console.log(element);
+        return (
+          <div>
+            <p>{element.category}</p>
+            const images = [{images.array}] data.map((element)) => {}
+            {element}
+          </div>
+        );
       })}
     </ul>
   );
